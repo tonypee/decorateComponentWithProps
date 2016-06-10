@@ -11,7 +11,7 @@ export default (EmbeddedComponent, props) => (class extends Component {
 
   render() {
     return (
-      <EmbeddedComponent { ...this.props } { ...props } />
+      <EmbeddedComponent ref="child" { ...this.props } { ...props } />
     );
   }
 });
